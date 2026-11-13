@@ -1,73 +1,31 @@
-# Local .terraform directories
-**/.terraform/*
-
-# .tfstate files
-*.tfstate
-*.tfstate.*
-*.terraform.lock.hcl
-
-# Crash log files
+#Terraform State and vars
+terraform
+.terraform
+terraform.tfstate
+terraform.tfstate.backup
 crash.log
 
-# Exclude all .tfvars files, which are likely to contain sentitive data, such as
-# password, private keys, and other secrets. These should not be part of version
-# control as they are data points which are potentially sensitive and subject
-# to change depending on the environment.
-#
+# project-specific
+**/dist
+**/local
+scripts/clean-code.js
 *.tfvars
+# npm
+**/node_modules
+**/npm-debug.log
 
-# Ignore files for local testing
-test.tf
+# istanbul javascript test coverage
+**/.nyc_output
 
-# Ignore override files as they are usually used to override resources locally and so
-# are not checked in
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
+# visual studio code
+**/.vscode
+**/*.code-workspace
 
-# Include override files you do wish to add to version control using negated pattern
-#
-# !example_override.tf
+# azure function
+azure_funcapp/host.json
 
-# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
-# example: *tfplan*
+# aws_cloudformation
+autoscale_params.txt
 
-# Ignore CLI configuration files
-.terraformrc
-terraform.rc
-
-# Ignore .tfsec
-.tfsec/
-
-# Ignore Mac files
-.DS_Store
-
-# Ignore IDE files
-.idea/
-
-# Node modules
-/node_modules
-
-# Visual Studio Code
-.vscode/
-
-### Go ###
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-
-# Test binary, built with `go test -c`
-*.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
-
-# Dependency directories (remove the comment below to include it)
-# vendor/
-
-# Go workspace file
-go.work
+.terraform/
+.terraform.lock.hcl

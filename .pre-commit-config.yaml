@@ -1,1 +1,8 @@
-common-dev-assets/module-assets/.pre-commit-config.yaml
+repos:
+  - repo: https://github.com/IBM/detect-secrets
+    rev: 0.13.1+ibm.64.dss
+    hooks:
+      - id: detect-secrets
+        args: ['--baseline', '.secrets.baseline']
+        exclude: package.lock.json
+

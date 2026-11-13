@@ -1,0 +1,371 @@
+{
+    "products": [
+        {
+            "label": "Fortinet FortiGate VM NGFW - A/P HA (IBM reseller)",
+            "name": "ibm-fortigate-AP-HA-terraform-payg",
+            "product_kind": "software",
+            "tags": [
+                "security",
+                "ibm_third_party"
+            ],
+            "keywords": [
+                "firewall",
+                "NGFW",
+                "Fortinet",
+                "FortiGate",
+                "Next-Generation Firewall",
+                "Security",
+                "IPS",
+                "UTP",
+                "UTM",
+                "Cybersecurity",
+                "VPN",
+                "Antivirus",
+                "High Availability",
+                "Redundancy",
+                "Fault Tolerant",
+                "Network Security",
+                "IBM Reseller"
+            ],
+            "short_description": "FortiGate delivers top-rated cloud security with NGFW protection, VPN, SD-WAN, and High Availability support, available through and supported by IBM.",
+            "long_description": "Fortinet FortiGate Next Generation Firewall (NGFW), available through and supported by IBM, provides highly available network security for cloud deployments. FortiGate helps address the challenges of maintaining security and availability in cloud environments by providing comprehensive network protection, VPN connectivity, SD-WAN, intrusion prevention, Web filtering, and application-aware security. FortiGate NGFW integrates with AI-driven FortiGuard and FortiSandbox services to help protect against known and zero-day threats. For centralized security management and analytics, FortiGate can be used with FortiManager and FortiAnalyzer.",
+            "provider_name": "Fortinet Inc.",
+            "offering_docs_url": "https://cloud.ibm.com/docs/licensed-firewall",
+            "offering_icon_url": "https://fortinet.s3.us.cloud-object-storage.appdomain.cloud/Fortinet.png",
+            "features": [
+                {
+                    "title": "NGFW protection",
+                    "description": "L4-L7 visibility and protection for ingress/egress traffic"
+                },
+                {
+                    "title": "Intent-based Segmentation",
+                    "description": "Inspect and isolate inter-subnet traffic in same VPC and inter-VPC traffic"
+                },
+                {
+                    "title": "High Availability",
+                    "description": "Meet Service level availability and performance requirements with Active-Passive High availability pairs deployed in virtual networks."
+                }
+            ],
+            "flavors": [
+                {
+                    "label": "",
+                    "name": "",
+                    "working_directory": ".",
+                    "licenses": [
+                        {
+                            "id": "eula",
+                            "name": "EULA",
+                            "url": "https://www.fortinet.com/content/dam/fortinet/assets/legal/EULA.pdf"
+                        }
+                    ],
+                    "compliance": {},
+                    "iam_permissions": [],
+                    "architecture": {
+                        "features": [],
+                        "diagrams": []
+                    },
+                    "release_notes_url": "",
+                    "configuration": [
+                        {
+                            "key": "CATALOG_OFFERING_PLAN_CRN",
+                            "type": "string",
+                            "default_value": "crn:v1:bluemix:public:globalcatalog-collection:global::1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc:plan:sw.1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc.8aca8249-18f1-4da7-bfb7-78fcccc1ed9e-global",
+                            "description": "IBM Cloud Licensed Firewall Plan CRN",
+                            "required": true,
+                            "options": [
+                                {
+                                    "description": "$0.17 per vCPU/hr | $248.20 per month (Estimated)",
+                                    "displayname": "2 vCPU ATP",
+                                    "value": "crn:v1:bluemix:public:globalcatalog-collection:global::1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc:plan:sw.1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc.23def19e-5fea-4259-8bb3-09325c72a75f-global"
+                                },
+                                {
+                                    "description": "$0.17 per vCPU/hr | $992.80 per month (Estimated)",
+                                    "displayname": "8 vCPU ATP",
+                                    "value": "crn:v1:bluemix:public:globalcatalog-collection:global::1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc:plan:sw.1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc.c17d7796-0092-47e6-8d58-48533fba9aa5-global"
+                                },
+                                {
+                                    "description": "$0.44 per vCPU/hr | $642.40 per month (Estimated)",
+                                    "displayname": "2 vCPU UTP",
+                                    "value": "crn:v1:bluemix:public:globalcatalog-collection:global::1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc:plan:sw.1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc.8ce68776-289b-4dc5-84d1-845f7290f22e-global"
+                                },
+                                {
+                                    "description": "$0.20 per vCPU/hr | $1,168.00 per month (Estimated)",
+                                    "displayname": "8 vCPU UTP",
+                                    "value": "crn:v1:bluemix:public:globalcatalog-collection:global::1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc:plan:sw.1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc.8aca8249-18f1-4da7-bfb7-78fcccc1ed9e-global"
+                                },
+                                {
+                                    "description": "$0.21 per vCPU/hr | $2,401.70 per month (Estimated)",
+                                    "displayname": "16 vCPU UTP",
+                                    "value": "crn:v1:bluemix:public:globalcatalog-collection:global::1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc:plan:sw.1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc.419fa63c-e8f5-4065-b676-68cbc11af3e3-global"
+                                },
+                                {
+                                    "description": "$0.24 per vCPU/hr | $1,401.60 per month (Estimated)",
+                                    "displayname": "8 vCPU Enterprise",
+                                    "value": "crn:v1:bluemix:public:globalcatalog-collection:global::1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc:plan:sw.1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc.c9e40066-91d5-470b-b048-d900b79be72f-global"
+                                },
+                                {
+                                    "description": "$0.24 per vCPU/hr | $2,803.20 per month (Estimated)",
+                                    "displayname": "16 vCPU Enterprise",
+                                    "value": "crn:v1:bluemix:public:globalcatalog-collection:global::1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc:plan:sw.1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc.c332973d-f363-4223-b257-a672ced98996-global"
+                                },
+                                {
+                                    "description": "$0.24 per vCPU/hr | $5,606.40 per month (Estimated)",
+                                    "displayname": "32 vCPU Enterprise",
+                                    "value": "crn:v1:bluemix:public:globalcatalog-collection:global::1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc:plan:sw.1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc.e677cc20-3263-445c-aa57-19822204471f-global"
+                                }
+                            ],
+                            "virtual": false
+                        },
+                        {
+                            "key": "CATALOG_OFFERING_VERSION_CRN",
+                            "type": "string",
+                            "default_value": "crn:v1:bluemix:public:globalcatalog-collection:global::1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc:version:f8125c09-f837-4001-96b1-f14a66ff8092-global/c6c3f122-80be-4748-b53c-04ebeeca9755-global",
+                            "description": "IBM Cloud Licensed Firewall Version CRN 8.0.2",
+                            "required": true,
+                            "hidden": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "CLUSTER_NAME",
+                            "type": "string",
+                            "default_value": "fortigate-terraform",
+                            "description": "Name of the cluster (must be lowercase). For easy identification, the format cluster-name-resource-randomSuffix is used.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "FGT1_PORT4_MGMT_GATEWAY",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "Gateway for Port 4 (HA management port) on the primary (ACTIVE) FortiGate.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "FGT1_STATIC_IP_PORT1",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "Static IP assignment for Port 1 of the Primary (ACTIVE) FortiGate.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "FGT1_STATIC_IP_PORT2",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "Static IP assignment for Port 2 of the Primary (ACTIVE) FortiGate.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "FGT1_STATIC_IP_PORT3",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "Port used for the HA Heartbeat mechanism.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "FGT1_STATIC_IP_PORT4",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "HA management port.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "FGT2_PORT4_MGMT_GATEWAY",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "Gateway for Port 4 (HA management port) on the secondary (PASSIVE) FortiGate.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "FGT2_STATIC_IP_PORT1",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "STATIC IP Assignment for Port 1 on the Secondary (PASSIVE) FortiGate.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "FGT2_STATIC_IP_PORT2",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "STATIC IP Assignment for Port 2 on the Secondary (PASSIVE) FortiGate.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "FGT2_STATIC_IP_PORT3",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "Port used for the HA Heartbeat mechanism.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "FGT2_STATIC_IP_PORT4",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "HA management port.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "IBMCLOUD_API_KEY",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "Your IBM USER API key. Refer to the README for links to documentation for IBM API keys. This value is required for the SDN Connector for HA SYNC.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "NETMASK",
+                            "type": "string",
+                            "default_value": "255.255.255.0",
+                            "description": "Subnet mask for the static IP address and NIC of each FortiGate.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "REGION",
+                            "type": "string",
+                            "default_value": "us-east",
+                            "description": "Deployment region.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "RESOURCE_GRP",
+                            "type": "string",
+                            "default_value": "Default",
+                            "description": "The RESOURCE Group Name to attach to the FortiGate instances.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "SSH_PUBLIC_KEY",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "The name(ID) of your SSH public key to be used.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "PUBLIC_GATEWAY_ID",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "ID of the public gateway to attach to the port1 subnet. A public gateway must be attached to the port1 subnet to provide outbound internet access, which is required for the secondary FortiGate node to register its license.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "SUBNET_1",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "The ID of the Primary, Public Subnet Used for port1 on the FortiGate. A public gateway must be attached to this subnet to provide outbound internet access, which is required for the secondary FortiGate node to register its license.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "SUBNET_2",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "The ID of the Secondary, Private Subnet Used for port2 on the FortiGate.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "SUBNET_3",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "The ID of the Subnet for the HA heartbeat mechanism. Tied to Port3.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "SUBNET_4",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "The ID of the Subnet used for the HA management subnet. Tied to Port4.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "TF_VERSION",
+                            "type": "string",
+                            "default_value": "1.6.6",
+                            "description": "Terraform version to be used in validation.",
+                            "required": true,
+                            "hidden": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "VPC",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "Name of the VPC you want to deploy a FortiGate into.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "ZONE",
+                            "type": "string",
+                            "default_value": "us-east-1",
+                            "description": "Deployment zone.",
+                            "required": true,
+                            "virtual": false
+                        }
+                    ],
+                    "terraform_version": "",
+                    "outputs": [
+                        {
+                            "key": "FGT1_Default_Admin_Password",
+                            "description": "Default admin password for FortiGate 1 (instance ID). Password may be empty on first boot."
+                        },
+                        {
+                            "key": "Catalog_Offering_Version_CRN",
+                            "description": "The catalog offering version CRN used for deployment"
+                        },
+                        {
+                            "key": "Security_Group_Public_ID",
+                            "description": "ID of the public security group attached to port1 (external) and port4 (HA management)"
+                        },
+                        {
+                            "key": "Port1_Public_Gateway_ID",
+                            "description": "ID of the public gateway attached to port1 subnet (existing or newly created)"
+                        },
+                        {
+                            "key": "Security_Group_Private_ID",
+                            "description": "ID of the private security group attached to port2 (internal) and port3 (HA heartbeat)"
+                        },
+                        {
+                            "key": "Security_Group_Public_Name",
+                            "description": "Name of the public security group attached to port1 (external) and port4 (HA management)"
+                        },
+                        {
+                            "key": "Security_Group_Private_Name",
+                            "description": "Name of the private security group attached to port2 (internal) and port3 (HA heartbeat)"
+                        },
+                        {
+                            "key": "Selected_VSI_Profile",
+                            "description": "The VSI profile automatically selected based on the catalog offering plan CRN"
+                        },
+                        {
+                            "key": "Catalog_Offering_Plan_CRN",
+                            "description": "The catalog offering plan CRN used for deployment"
+                        },
+                        {
+                            "key": "FGT2_Default_Admin_Password",
+                            "description": "Default admin password for FortiGate 2 (instance ID). Password may be empty on first boot."
+                        }
+                    ],
+                    "scripts": [],
+                    "change_notices": {}
+                }
+            ]
+        }
+    ]
+}
