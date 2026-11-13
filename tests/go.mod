@@ -1,4 +1,4 @@
-module github.com/terraform-ibm-modules/terraform-ibm-module-template
+module github.com/terraform-ibm-modules/terraform-ibm-fortinet-ap-ha-single-zone
 
 go 1.26.10
 
